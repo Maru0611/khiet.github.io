@@ -1,5 +1,46 @@
 <!DOCTYPE html>
 <html>
+  
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Đăng Nhập / Đăng Ký</title>
+<style>
+    form {
+        margin: 20px auto;
+        width: 300px;
+    }
+    input {
+        width: 100%;
+        padding: 8px;
+        margin: 5px 0;
+        box-sizing: border-box;
+    }
+    input[type="submit"] {
+        background-color: #4CAF50;
+        color: white;
+    }
+</style>
+</head>
+<body>
+<h2>Đăng Nhập</h2>
+<form action="/login" method="post">
+    <label for="username">Tài khoản:</label><br>
+    <input type="text" id="username" name="username" required><br>
+    <label for="password">Mật khẩu:</label><br>
+    <input type="password" id="password" name="password" required><br><br>
+    <input type="submit" value="Đăng Nhập">
+</form>
+  
+<h2>Đăng Ký</h2>
+<form action="/register" method="post">
+    <label for="newUsername">Tạo tài khoản mới:</label><br>
+    <input type="text" id="newUsername" name="newUsername" required><br>
+    <label for="newPassword">Tạo mật khẩu mới:</label><br>
+    <input type="password" id="newPassword" name="newPassword" required><br><br>
+    <input type="submit" value="Đăng Ký">
+</form>
+</body>
 
 <head>
   <title>Giới thiệu</title>
